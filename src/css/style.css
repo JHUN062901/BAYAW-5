@@ -1,0 +1,373 @@
+body {
+    font-family: 'Arial Black', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/3964.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: wavy 10s infinite;
+    z-index: -1; /* Ensure background stays behind all content */
+}
+
+/* Wavy animation keyframes */
+@keyframes wavy {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+h1 {
+    color: #20A096; /* Green font color for the title */
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em; /* Adjust size as needed */
+    text-shadow: 2px 2px 2px white; /* White shadow effect */
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.start-quiz-btn {
+    background: rgba(0, 230, 150, 0.5); 
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 15px 30px; /* Adjusted padding for better mobile fit */
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em; /* Adjusted font size for mobile */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a subtle border */
+    margin-top: 20px;
+}
+
+.start-quiz-btn:hover {
+    background-color: rgba(0, 255, 200, 0.8); 
+    color: white;
+}
+
+.quiz-container {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 90%; /* Responsive width for mobile */
+    max-width: 400px; /* Maximum width */
+    text-align: center;
+    padding: 30px; /* Adjusted padding for mobile */
+    margin: 20px;
+    font-size: 1em; /* Adjusted font size */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    color: #000; /* Black font color for subtitle */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #197870;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.timer-container {
+    position: relative;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.timer-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #38CDB6; /* Color of the timer line */
+    border-radius: 30px;
+    transition: width linear;
+}
+
+.question-indicator {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: rgba(0, 230, 150, 0.5);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 15px 30px; /* Adjusted padding for better mobile fit */
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em; /* Adjusted font size for mobile */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn:hover {
+    background-color: rgba(0, 255, 200, 0.8);
+    color: white;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduced gap for mobile */
+}
+
+.correct-answer {
+    color: #20BD7C;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white; 
+    padding: 40px 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#home-btn, .settings-btn, .about-btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #1a936f; /* Change this value to your desired font color */
+    padding: 0px 20px;
+    font-size: 1.2em; /* Adjusted font size for mobile */
+    cursor: pointer;
+    margin: 0 5px; /* Space between the buttons */
+}
+
+#home-btn:hover, .settings-btn:hover, .about-btn:hover {
+    background-color: transparent;
+    color: #114b5f;
+}
+
+.save-settings-btn {
+    background: rgba(0, 230, 150, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Adjusted padding for better mobile fit */
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em; /* Adjusted font size for mobile */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.save-settings-btn:hover {
+    background-color: rgba(0, 255, 200, 0.8);
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 30px; /* Adjusted padding for mobile */
+    border: none;
+    width: 90%; /* Responsive width for mobile */
+    max-width: 700px; /* Maximum width */
+    text-align: center;
+    border-radius: 35px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+    font-size: 1em; /* Adjusted font size */
+    line-height: 1.2;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    color: #197870;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em; /* Adjusted font size for mobile */
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#topic-select {
+    font-size: 1em; /* Adjusted font size */
+    padding: 20px; /* Adjusted padding for mobile */
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Maximum width */
+    margin-top: 10px;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 1em; /* Adjusted font size */
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Maximum width */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.custom-select:hover {
+    cursor: pointer;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #88d498;
+}
+
+.about-modal {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px; /* Adjusted padding for mobile */
+    border-radius: 20px;
+    width: 90%; /* Responsive width for mobile */
+    max-width: 700px; /* Maximum width */
+    max-height: 90%;
+    overflow: auto;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-size: 1em; /* Adjusted font size */
+}
+
+.about-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.about-modal-header h2 {
+    margin: 0;
+}
+
+.about-modal-header .close {
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.about-modal-header .close:hover {
+    color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .quiz-container, .modal-content, .about-modal-content {
+        padding: 10px;
+    }
+
+    .start-quiz-btn, .btn, .save-settings-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    #home-btn, .settings-btn, .about-btn {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+}
