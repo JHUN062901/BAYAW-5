@@ -1885,113 +1885,113 @@ const questions = [
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'characteristics of metals when not acted upon by outside forces.  This includes color, density, weight, and electrical and heat conductivity.',
+        correct: 'Physical Properties',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'characteristics exhibited by metal when outside forces are applied to them.',
+        correct: 'Mechanical Properties',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'characteristics of the chemical composition of metal and their chemical reaction to other metals.  Example, resistance to corrosion.',
+        correct: 'Chemical Properties',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'it is the greatest stress seen by the material’s resistance to being pulled apart.  It is sometimes called as the ultimate strength.',
+        correct: 'Tensile Strength',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'usually designated at a 0.2% permanent elongation.',
+        correct: 'Yield Strength',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'indicate how much a material is deformed as it is stretched.  The greater the deformation the more ductile is the material.',
+        correct: 'Ductility',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'it is the material’s resistance to penetration and permanent deformation.',
+        correct: 'Hardness',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'is the tendency of a material to break under impact.',
+        correct: 'Brittleness',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'material’s resistance to being compressed',
+        correct: 'Compression Strength',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'capability of material to be shaped and formed',
+        correct: 'Malleability',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'ability ofmaterial to widthstand bending and twisting',
+        correct: 'Toughness',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'microscopic mesurement of metal that shows differences in sizes that relates directly to strengths',
+        correct: 'Grain size',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'Material obtained from rubber tree.It is capable to withstand extreme deformability with more or less complete recovery upon removal of deforming force.',
+        correct: 'Rubber',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'Large group of materials consisting of combination of carbon and oxygen, hydrogen, nitrogen, and other organic and organic  elements.',
+        correct: 'Plastic',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'Materials ranging from glass to furnace brick',
+        correct: 'Engineering Ceramics',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'The oldest engineering material that includes jute, flax, and hemp.',
+        correct: 'Fibers',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'It is the process of of joining pieces of metals together by means of heat, pressure, or combination of both.',
+        correct: 'Welding',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'common method of joining metal sheet especially non-ferrous metal',
+        correct: 'Soldering',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'Flux is used to coat metal prior to welding to remove oxidation that occurs in the pieces of metal to be joined.',
+        correct: 'Soldering',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'joining technique of metal using oxyacetylene welding equipment by melting a non-ferrous filler rod at a temperature above 427 C but below the melting point of metal being joined',
+        correct: 'Brazing',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'It is the common for of gas welding process using oxygen and acetylene gases to provide heat to melt and join metal by means of fusion.',
+        correct: 'Oxyacetylene Welding',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
-        question: 'Question',
-        correct: 'Answer',
+        question: 'It uses the heat generated by electric current passing through a small area of the metal being joined.',
+        correct: 'Resistance Welding',
         topic: 'Agricultural Machinery And Equipment'
     },
     {
